@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+	int x;		//the input
+	
+	printf("Enter 5 digit number: ");
+	scanf("%d", & x);
+	
+	
+	//Validation
+	while(1 + (int)log10(x) < 5)
+	{
+		printf("Wrong Input, Enter again: ");
+		scanf("%d", & x);
+	}
+}
