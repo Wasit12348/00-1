@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main()
+{
+    char decision[50];
+    char yes[50] = "Yes";
+    char no[50] = "No";
+
+    printf("Would you like to bid for this item?\nAnswer----");
+    gets(decision);
+
+    while(strcmp(decision, yes) != 0 && strcmp(decision, no) != 0)
+    {
+        printf("Please enter either Yes or No\nAnswer----");
+        gets(decision);
+    }
+}
